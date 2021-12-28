@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>practice</title>
+    <style type="text/css">
+     .red{background-color: red;}
+     .blue{background-color: blue;}
+     .yellow{background-color: yellow;}
+    </style>
+   </head>
+<body>
+ <?php
+    $fval = isset($_POST["val"])?trim($_POST["val"]):'';   
+ ?>
+ <form method="post">
+  <input type="text" name="val"  class="<?php echo $fval ?>">
+  <input type="submit" name="colormoko">
+ </form>
+ <form method="post">
+  <input type="text" name="val"  class="<?php echo $fval ?>">
+  
+ </form>
+
+
+ </body>
+ </html>
